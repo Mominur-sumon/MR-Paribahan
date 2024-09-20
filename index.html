@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Paribahan</title>
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- DaisyUI and tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/bdbe5ace0b.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1dd100",
+                        secondary: "#030712",
+                        cuppomOne: "ffbf0f",
+                        cuppomTwo: "f7809c",
+                        mobileMenu: "#f7f8f8",
+                        body: "#030712",
+                        buttnColor: "rgb(29, 209, 0)"
+                    },
+                    fontFamily: {
+                        'Raleway': ['Raleway', 'sans - serif'],
+                        'Inter': ['Inter', 'system - ui'],
+                    }
+                }
+            }
+        }    
+    </script>
+</head>
+
+
+<body class="font-Raleway">
+    <header class="md:container md:mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start space-x-3">
+
+                <h3 class=" text-3xl font-bold ">MR Paribahan</h3>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 justify-center items-center">
+                    <li><a
+                            class="text-xl font-semibold hover:font-semibold transition-colors duration-300 ease-in-out">Home</a>
+                    </li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">About</a>
+                    </li>
+                    <li><a
+                            class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Designation</a>
+                    </li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Search</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class=" hidden md:flex justify-center items-center  space-x-4">
+
+
+                    <a class="btn bg-arrow_bg rounded-full text-xl hover:bg-green-500 font-semibold">Bus
+                        <span><i
+                                class="fa-solid fa-van-shuttle text-lg  bg-buttnColor text-white rounded-full h-8 w-8 flex items-center justify-center"></i></a>
+
+                </div>
+
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Designation</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="my-10 relative">
+            <div class="hero min-h-screen" style="background-image: url(./images/banner.png)">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel With <span class="text-buttnColor">MR
+                                Paribahan</span></h1>
+                        <p class="mb-5">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated
+                            testing features allow for a streamlined .
+                        </p>
+                        <button class="btn bg-buttnColor">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Section -->
+            
+             <div class="w-1/2 mx-auto flex justify-evenly absolute -bottom-5 left-[23%]">
+               <div class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
+                <div>
+                    <i class="fa-solid fa-users text-buttnColor"></i>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-semibold">500K+</h3>
+                    <p>registered Users</p>
+                </div>
+               </div>
+               <div class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
+                <div>
+                    <i class="fa-solid fa-truck-moving text-buttnColor"></i>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-semibold">500K+</h3>
+                    <p>Rental Partners</p>
+                </div>
+               </div>
+               <div class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
+                <div>
+                    <i class="fa-solid fa-ticket text-buttnColor"></i>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-semibold">1.7Lakh+</h3>
+                    <p>registered Users</p>
+                </div>
+               </div>
+               
+               
+             </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
