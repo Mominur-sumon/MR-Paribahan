@@ -525,7 +525,7 @@
                         <span class="label-text font-bold text-base">Phone Number*</span>
 
                     </div>
-                    <input type="number" placeholder="Enter Phone Number" class="input input-bordered w-full" />
+                    <input id="phone-number" type="number" placeholder="Enter Phone Number" class="input input-bordered w-full" />
 
                     </label>
 
@@ -538,7 +538,7 @@
 
                     </label>
 
-                    <button onclick="my_modal_1.showModal()"
+                    <button id="next-btn" disabled onclick="my_modal_1.showModal()"
                         class="btn bg-primary mt-5 ext-lg text-white uppercase w-full">Next</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box">
@@ -567,7 +567,7 @@
 
                                         <!-- Button -->
                                         <div class="flex justify-center mt-4">
-                                            <button
+                                            <button id="reload"
                                                 class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
                                                 Continue
                                             </button>

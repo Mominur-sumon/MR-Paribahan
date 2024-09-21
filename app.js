@@ -7,7 +7,8 @@ const cupponInputEl = document.getElementById("cuppon-field");
 const cupponBtnEl = document.getElementById("cuppon-btn");
 const defaulttextEl = document.getElementById("no-seat-booked");
 const grandPrice = document.getElementById("grand-price");
-
+const phoneNumber = document.getElementById("phone-number");
+const nextBtn = document.getElementById("next-btn");
 
 let SelectedSeatsArray = [];
 let totalPrice = 0;
@@ -71,4 +72,18 @@ document.getElementById("cuppon-btn").addEventListener("click", function () {
                             </p>`;
 
     grandPrice.innerText = (totalPrice - cupponSave).toFixed(2);
+});
+
+// Next btn function
+phoneNumber.addEventListener("keyup", function () {
+    if (phoneNumber.value.length === 11) {
+        nextBtn.removeAttribute("disabled");
+    }
+    else {
+        nextBtn.setAttribute("disabled", true);
+    }
+});
+
+document.getElementById("reload").addEventListener("click", function () {
+    window.location.reload();
 });
