@@ -152,13 +152,64 @@
             </div>
         </section>
 
+        <!-- Offers Section -->
+        <section class="max-w-2/3 mx-auto bg-white shadow-md rounded-lg p-8 mt-10 text-center">
+            <!-- Header -->
+            <h2 class="text-2xl font-bold mb-8">Best offers for you</h2>
+
+            <!-- Coupons Container -->
+            <div class="flex justify-center space-x-4">
+                <!-- Coupon 1 -->
+                <div class="bg-yellow-400 flex flex-col justify-between p-6 rounded-lg w-1/3 relative">
+                    <div class="absolute left-0 top-1/2 -ml-4 w-8 h-8 bg-white rounded-full"></div>
+                    <div class="absolute right-0 top-1/2 -mr-4 w-8 h-8 bg-white rounded-full"></div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold">15% OFF</h3>
+                        <p class="text-lg">on your next purchase</p>
+                        <p class="text-sm text-gray-700 mt-2">use by January 2024</p>
+                    </div>
+                    <div class="flex justify-around items-center">
+                        <p class="text-right text-lg font-semibold mt-4">NEW15</p>
+                    <p class="text-gray-600">Coupon Code</p>
+                    </div>
+                </div>
+
+                <!-- Coupon 2 -->
+                <div class="bg-pink-300 flex flex-col justify-between p-6 rounded-lg w-1/3 relative">
+                    <div class="absolute left-0 top-1/2 -ml-4 w-8 h-8 bg-white rounded-full"></div>
+                    <div class="absolute right-0 top-1/2 -mr-4 w-8 h-8 bg-white rounded-full"></div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold">20% OFF</h3>
+                        <p class="text-lg">on your next purchase</p>
+                        <p class="text-sm text-gray-700 mt-2">use by January 2024</p>
+                    </div>
+                    <div class="flex justify-around items-center">
+                        <p class="text-right text-lg font-semibold mt-4">Cupple 20</p>
+                    <p class="text-gray-600">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Offers Button -->
+            <div class="mt-8">
+                <button
+                    class="px-6 py-2 bg-green-100 text-green-700 font-semibold rounded-full border border-green-600 hover:bg-green-600 hover:text-white transition">
+                    See All Offers
+                </button>
+            </div>
+        </section>
+
+
         <section class="w-2/3 mx-auto bg-white shadow-lg rounded-lg p-6 my-10">
             <!-- Bus Company Name -->
             <h2 class="text-center text-2xl font-bold mb-4">MR Paribahan</h2>
             <p class="text-center text-gray-500 mb-6">
-                Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined experience.
+                Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                features allow for a streamlined experience.
             </p>
-            
+
             <!-- Ticket Details -->
             <div class="border-t border-b py-6 mb-4">
                 <div class="flex justify-between items-center">
@@ -182,7 +233,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Route and Time Information -->
             <div class="grid grid-cols-2 gap-4 text-center text-sm">
                 <div>
@@ -194,7 +245,7 @@
                     <p>9:00 PM</p>
                 </div>
             </div>
-    
+
             <!-- Boarding and Dropping Points -->
             <div class="grid grid-cols-2 gap-4 text-center text-sm mt-6">
                 <div>
@@ -206,7 +257,7 @@
                     <p>Bogura</p>
                 </div>
             </div>
-    
+
             <!-- Estimated Time -->
             <div class="text-center text-sm mt-6">
                 <span class="font-semibold block">Est. Time</span>
@@ -427,7 +478,8 @@
                         </h3>
                         <div class="border-b-2 my-4 border-dashed"></div>
                         <ul id="Selected-seat" class="space-y-5">
-                            <h3 class="text-3xl font-semibold text-error capitalize text-center">No Seat Booked</h3>
+                            <h3 id="no-seat-booked" class="text-3xl font-semibold text-error capitalize text-center">No
+                                Seat Booked</h3>
                         </ul>
                         <div class="border-b-2 my-4 border-dashed"></div>
 
@@ -440,17 +492,17 @@
 
                         <div class="border-b-2 my-4 border-dashed"></div>
 
-                        <div
+                        <div id="show-cuppon-price"
                             class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
-                            <input id="cuppon-field" disabled class="input my-5 w-full input-primary border-primary" type="text" name="" id=""
-                                placeholder="Have a Cuppon?">
+                            <input id="cuppon-field" disabled class="input my-5 w-full input-primary border-primary"
+                                type="text" name="" id="" placeholder="Have a Cuppon?">
                             <button id="cuppon-btn" class="btn btn-primary" disabled>Apply</button>
                         </div>
 
                         <div class="text-lg font-semibold flex justify-between">
                             <p>Grand Price</p>
                             <p><span>BDT: </span>
-                                <span>****</span>
+                                <span id="grand-price">****</span>
                             </p>
                         </div>
                     </div>

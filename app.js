@@ -5,6 +5,8 @@ const avaiableSeat = document.getElementById("avaiable-seat");
 const totalpriceEL = document.getElementById("total-price");
 const cupponInputEl = document.getElementById("cuppon-field");
 const cupponBtnEl = document.getElementById("cuppon-btn");
+const defaulttextEl = document.getElementById("no-seat-booked");
+const grandPrice = document.getElementById("grand-price");
 
 
 let SelectedSeatsArray = [];
@@ -15,7 +17,7 @@ function handleSelectSeat(event) {
         alert("Seat already selected");
         return;
     }
-    else if(SelectedSeatsArray.length < 4) {
+    else if (SelectedSeatsArray.length < 4) {
         console.log("event", event);
         event.classList.toggle("bg-primary");
         event.classList.toggle("text-white");
@@ -25,6 +27,7 @@ function handleSelectSeat(event) {
 
         const avaiableSeatvalue = Number(avaiableSeat.innerText) - 1;
         avaiableSeat.innerText = avaiableSeatvalue;
+        defaulttextEl.style.display = "none";
         SelectedSeat.innerHTML += `<li class="text-base font-normal flex justify-between">
         <span>${event.innerText}</span>
         <span>Economy</span>
@@ -40,9 +43,32 @@ function handleSelectSeat(event) {
 
         }
     }
-    else{
+    else {
         alert("You can select only 4 seats");
         return;
     }
 }
+// cuppon btn function 
+document.getElementById("cuppon-btn").addEventListener("click", function () {
+    const cupponValue = cupponInputEl.value;
+    let cupponSave = 0;
+    if (cupponValue === "NEWS50") {
+        cupponSave = totalPrice * 0.15;
+    }
+    else if (cupponValue === "Couple 20") {
+        cupponSave = totalPrice * 0.20;
+    }
+    else {
+        alert("Invalid cuppon code");
+        return;
+    }
 
+    const showCupponPriceEl = document.getElementById("show-cuppon-price");
+    showCupponPriceEl.innerHTML = `
+                            <p>Discount</p>
+                            <p><span>BDT: </span>
+                                <span id="grand-price">-${cupponSave.toFixed(2)}</span>
+                            </p>`;
+
+    grandPrice.innerText = (totalPrice - cupponSave).toFixed(2);
+});
