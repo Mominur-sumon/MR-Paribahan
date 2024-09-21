@@ -35,8 +35,8 @@
                         buttnColor: "rgb(29, 209, 0)"
                     },
                     fontFamily: {
-                        'Raleway': ['Raleway', 'sans - serif'],
-                        'Inter': ['Inter', 'system - ui'],
+                        'Ralewayy': ["Raleway"],
+                        'Interr': ['Inter'],
                     }
                 }
             }
@@ -45,7 +45,7 @@
 </head>
 
 
-<body class="font-Raleway">
+<body class="font-Ralewayy">
     <header class="md:container md:mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start space-x-3">
@@ -97,7 +97,8 @@
 
 
     <main>
-        <section class="my-10 relative">
+        <!-- Banner Section -->
+        <section class="my-10 relative ">
             <div class="hero min-h-screen" style="background-image: url(./images/banner.png)">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-neutral-content text-center">
@@ -114,38 +115,368 @@
             </div>
 
             <!-- Card Section -->
-            
-             <div class="w-1/2 mx-auto flex justify-evenly absolute -bottom-5 left-[23%]">
-               <div class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
-                <div>
-                    <i class="fa-solid fa-users text-buttnColor"></i>
+
+            <div class="w-1/2 mx-auto flex justify-evenly absolute -bottom-5 left-[23%]">
+                <div
+                    class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
+                    <div>
+                        <i class="fa-solid fa-users text-buttnColor"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold">500K+</h3>
+                        <p>registered Users</p>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-3xl font-semibold">500K+</h3>
-                    <p>registered Users</p>
+                <div
+                    class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
+                    <div>
+                        <i class="fa-solid fa-truck-moving text-buttnColor"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold">500K+</h3>
+                        <p>Rental Partners</p>
+                    </div>
                 </div>
-               </div>
-               <div class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
-                <div>
-                    <i class="fa-solid fa-truck-moving text-buttnColor"></i>
+                <div
+                    class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
+                    <div>
+                        <i class="fa-solid fa-ticket text-buttnColor"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-semibold">1.7Lakh+</h3>
+                        <p>registered Users</p>
+                    </div>
                 </div>
+
+
+            </div>
+        </section>
+
+        <!-- Seat Booking section -->
+        <section class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5 ">
+            <div class="col-span-2">
                 <div>
-                    <h3 class="text-3xl font-semibold">500K+</h3>
-                    <p>Rental Partners</p>
+                    <h2 class="text-2xl text-secondary font-semibold">Select Your Seat</h2>
                 </div>
-               </div>
-               <div class="flex justify-center items-center space-x-4 bg-white border border-b-buttnColor rounded-lg p-5">
+                <div class="border-b-2 border-dashed my-4"></div>
+                <div class="flex justify-between items-center">
+                    <p class="space-x-3"><i class="fa-solid fa-couch"></i><span>Available</span></p>
+                    <p class="text-primary space-x-2"><i class="fa-solid fa-couch"></i><span>Selected</span></p>
+                </div>
+                <div class="border-b-2 border-dashed my-4"></div>
+                <!-- Section: seat section start -->
+                <section class="grid grid-cols-12 items-center gap-y-5 font-Inter">
+                    <!-- Front Seat -->
+
+                    <p class="col-span-1"></p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <p class="col-span-8"></p>
+                        <div class="col-span-2 flex justify-center items-center">
+                            <img class="h-10 w-10" src="images/wheel.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- row 1 -->
+                    <p class="col-span-1">A</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">A1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">A2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">A3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">A4</button>
+
+
+
+                    </div>
+
+                    <!-- row B-->
+                    <p class="col-span-1">B</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">B1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">B2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">B3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">B4</button>
+
+
+
+                    </div>
+
+                    <!-- row C -->
+                    <p class="col-span-1">C</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">C1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">C2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">C3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">C4</button>
+
+
+
+                    </div>
+
+                    <!-- row D -->
+                    <p class="col-span-1">D</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">D1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">D2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">D3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">D4</button>
+
+
+
+                    </div>
+
+                    <!-- row E -->
+                    <p class="col-span-1">E</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">E1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">E2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">E3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">E4</button>
+
+
+
+                    </div>
+
+                    <!-- row F -->
+                    <p class="col-span-1">F</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">F1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">F2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">F3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">F4</button>
+
+
+
+                    </div>
+
+                    <!-- row G -->
+                    <p class="col-span-1">G</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">G1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">G2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">G3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">G4</button>
+
+
+
+                    </div>
+
+                    <!-- row H-->
+                    <p class="col-span-1">H</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">H1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">H2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">H3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">H4</button>
+
+
+
+                    </div>
+
+                    <!-- row I -->
+                    <p class="col-span-1">I</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">I1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">I2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">I3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">I4</button>
+
+
+
+                    </div>
+
+                    <!-- row 1 -->
+                    <p class="col-span-1">J</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">J1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">J2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">J3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors ease-out">J4</button>
+
+                    </div>
+                </section>
+
+            </div>
+            <div class="border-l-2 border-dashed pl-5">
                 <div>
-                    <i class="fa-solid fa-ticket text-buttnColor"></i>
+                    <h2 class="text-2xl font-semibold text-secondary">Select Your Seat</h2>
                 </div>
-                <div>
-                    <h3 class="text-3xl font-semibold">1.7Lakh+</h3>
-                    <p>registered Users</p>
-                </div>
-               </div>
-               
-               
-             </div>
+                <div class="border-b-2 my-4 border-dashed"></div>
+
+                <section>
+                    <div class="bg-[#f7f8f8] shadow-sm p-8 rounded-xl">
+                        <h3 class="flex justify-between">
+                            <p class="flex">
+                                <span>Seat</span>
+                                <span
+                                    class="bg-primary w-4 h-4 text-white flex justify-center items-center font-normal rounded-full text-sm">0</span>
+                            </p>
+                            <p>class</p>
+                            <p>Price</p>
+                        </h3>
+                        <div class="border-b-2 my-4 border-dashed"></div>
+                        <ul class="space-y-5">
+                            <h3 class="text-3xl font-semibold text-error capitalize text-center">No Seat Booked</h3>
+                        </ul>
+                        <div class="border-b-2 my-4 border-dashed"></div>
+
+                        <div class="text-lg font-semibold flex justify-between">
+                            <p>Total Price</p>
+                            <p><span>BDT: </span>
+                                <span>****</span>
+                            </p>
+                        </div>
+
+                        <div class="border-b-2 my-4 border-dashed"></div>
+
+                        <div
+                            class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
+                            <input class="input my-5 w-full input-primary border-primary" type="text" name="" id=""
+                                placeholder="Have a Cuppon?">
+                            <button class="btn btn-primary" disabled>Apply</button>
+                        </div>
+
+                        <div class="text-lg font-semibold flex justify-between">
+                            <p>Grand Price</p>
+                            <p><span>BDT: </span>
+                                <span>****</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Form section -->
+
+                    <div class="my-5"></div>
+                    <label class="form-control w-full my-3">
+                        <div class="label">
+                            <span class="label-text font-bold text-base">Passanger Name*</span>
+
+                        </div>
+                        <input type="text" placeholder="Enter Passanger Name" class="input input-bordered w-full" />
+
+                    </label>
+
+                    <label class="form-control w-full my-3">
+                    </label>
+                    <div class="label">
+                        <span class="label-text font-bold text-base">Phone Number*</span>
+
+                    </div>
+                    <input type="number" placeholder="Enter Phone Number" class="input input-bordered w-full" />
+
+                    </label>
+
+                    <label class="form-control w-full my-3"></label>
+                    <div class="label">
+                        <span class="label-text font-bold text-base">Email</span>
+
+                    </div>
+                    <input type="email" placeholder="Enter email" class="input input-bordered w-full" />
+
+                    </label>
+
+                    <button onclick="my_modal_1.showModal()"
+                        class="btn bg-primary mt-5 ext-lg text-white uppercase w-full">Next</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box">
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <div class=" bg-white rounded-lg shadow-lg p-6 w-full">
+                                        <!-- Icon -->
+                                        <div class="flex justify-center">
+                                            <div class="bg-green-100 rounded-full p-4 mb-4">
+                                                <img src="images/success.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Success Message -->
+                                        <h2 class="text-center text-2xl font-bold text-green-600 mb-2">SUCCESS</h2>
+
+                                        <!-- Booking Text -->
+                                        <p class="text-center text-gray-700">Thank you for Booking Our Bus Seats. We are
+                                            working hard to
+                                            find the best service and deals for you.</p>
+
+                                        <!-- Confirmation Info -->
+                                        <p class="text-center text-gray-500 mt-2">Shortly you will find a confirmation
+                                            in your email.
+                                        </p>
+
+                                        <!-- Button -->
+                                        <div class="flex justify-center mt-4">
+                                            <button
+                                                class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
+                                                Continue
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                    <div class="flex justify-between mt-5">
+                        <a class="underline font-semibold hover:text-primary transition-colors ease-in-out"
+                            href="#">terms and Conditions</a>
+                        <a class="underline font-semibold hover:text-primary transition-colors ease-in-out"
+                            href="#">Cancalation Policy</a>
+                    </div>
+
+
+                </section>
+            </div>
+
+
+
         </section>
 
     </main>
